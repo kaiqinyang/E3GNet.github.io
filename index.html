@@ -1,77 +1,172 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-  <meta charset="UTF-8">  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <title>E3GNet</title>
-  <style>  
-    body {  
-      font-family: Arial, sans-serif;  
-      line-height: 1;  
-      margin: 0;  
-      padding: 0;  
-      color: #333;  
-    }  
-    header {  
-      background-color: #008cba;  
-      color: white;
-      padding: 0.5rem 0.5rem;  
-      text-align: center;  
-    }
-    header p {  
-      font-size: 1.5rem;
-      font-family: "Times New Roman", Times, serif;
-    }  
-    section {  
-      padding: 1.5rem 2rem;
-      text-align: center; 
-    }
-    section p {  
-      font-size: 1.5rem;
-      font-family: "Times New Roman", Times, serif;
-    } 
-    h1, h2 {  
-      color: #008cba;
-      text-align: center; 
-    }  
-    .video-container {  
-      text-align: center;  
-      margin-top: 20px;  
-    }  
-    .video-container video {  
-      width: 80%;  
-      max-width: 800px;  
-      height: auto;  
-    }  
-    footer {  
-      background-color: #f4f4f4;  
-      color: #555;  
-      text-align: center;  
-      padding: 1rem;  
-      margin-top: 2rem;  
-    }  
-  </style>  
-</head>  
-<body>  
-  <header>  
-    <h1>E3GNet</h1>  
-    <p>Efficient End-to-End 6-Dof Grasp Detection Framework <br> for Edge Devices with Hierarchical Heatmaps and Feature Propagation</p>  
-  </header>
-  
-  <section id="framework">  
-    <h2>Framework</h2>  
-    <img src="framework.png" width="600">
-  </section>
-  
-  <section id="parameters">  
-    <h2>Model implementation details</h2>  
-    <p>It will be shown later.</p>  
-  </section>  
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
 
-  <section id="video">  
-    <h2>Demo video</h2>  
-    <p>Demo video</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/GPItVCo1lJs?si=4-hy8IZ5PX75iisb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </section>  
-</body>  
-</html>
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>E3GNet</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="bulma.min.css">
+  <link rel="stylesheet" href="bulma-carousel.min.css">
+  <link rel="stylesheet" href="bulma-slider.min.css">
+  <link rel="stylesheet" href="fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="fontawesome.all.min.js"></script>
+  <script src="bulma-carousel.min.js"></script>
+  <script src="bulma-slider.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Efficient End-to-End 6-Dof Grasp Detection Framework for Edge Devices with Hierarchical Heatmaps and Feature Propagation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a target="_blank">Kaiqin Yang</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a target="_blank">Yixiang Dai</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a target="_blank">Guijin Wang</a>,</span>
+                    <span class="author-block">
+                      <a target="_blank">Siang Chen</a><sup>1</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Department of Electronic Engineering, Tsinghua University<br>Conferance name and year</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution</small></span>
+                    <span class="eql-cntrb"><small><br><sup>1</sup>Corresponding author</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2410.22980" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            6-DoF grasp detection is critically important for the advancement of intelligent embodied systems, as it provides feasible robot poses for object grasping. Various methods have been proposed to detect 6-DoF grasps through the extraction of 3D geometric features from RGBD or point cloud data. However, most of these approaches encounter challenges during real robot deployment due to their significant computational demands, which can be particularly problematic for mobile robot platforms, especially those reliant on edge computing devices. This paper presents an Efficient End-to-End Grasp Detection Network (E3GNet) for 6-DoF grasp detection utilizing hierarchical heatmap representations. E3GNet effectively identifies high-quality and diverse grasps in cluttered real-world environments.Benefiting from our end-to-end methodology and efficient network design, our approach surpasses previous methods in model inference efficiency and achieves real-time 6-Dof grasp detection on edge devices. Furthermore, real-world experiments validate the effectiveness of our method, achieving a satisfactory 94% object grasping success rate.
+          </p>
+          <img src="framework.png" width="800">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Model implementation details -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">The model implementation details will be shown later.</h2>
+        <div class="content has-text-justified">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+  
+<!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Demo Video</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <iframe src="https://www.youtube.com/embed/GPItVCo1lJs?si=4-hy8IZ5PX75iisb" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
